@@ -15,6 +15,7 @@ public class primebetweentwonums {
 		int high = s.nextInt();
 		
 		System.out.println();
+		System.out.println("Prime Number between "+ low +" and "+ high + "are");
 		while(low<=high) {
 			boolean flag = true;
 			for(int j =2;j*j<=low;j++){
