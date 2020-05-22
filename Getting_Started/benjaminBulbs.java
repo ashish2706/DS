@@ -7,7 +7,7 @@ public class benjaminBulbs {
 			
 			System.out.println("Enter the number of bulbs");
 			int n = s.nextInt();
-			
+		
 			int fluctuation = n;
 			for(int i =1;i*i<=n;i++){
 				System.out.println(i*i);
