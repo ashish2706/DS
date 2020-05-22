@@ -1,13 +1,8 @@
 package Getting_Started;
-
 import java.util.Scanner;
 
 public class pythagoreantriplet {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-			
 			Scanner s = new Scanner(System.in);
 			
 			System.out.println("Enter the value of three input variables");
@@ -27,7 +22,6 @@ public class pythagoreantriplet {
 				System.out.println("Yes");
 			
 			else
-				
 				System.out.println("No");
 	}
 
