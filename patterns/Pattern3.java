@@ -1,22 +1,15 @@
-
- package patterns;
- import java.util.*;
-
+package patterns;
+import java.util.*;
 
 public class Pattern3 {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		Scanner scn = new Scanner(System.in);
-		
 		System.out.println("Enter the row value");
-
 		int n = scn.nextInt();
+		
 		System.out.println();
 		
-		for(int i =1;i<=n;i++)
-		{
+		for(int i =1;i<=n;i++){
 			for(int j =1;j<=n-i;j++)
 				System.out.print("\t");
 			
@@ -25,7 +18,5 @@ public class Pattern3 {
 			
 			System.out.println();
 		}
-
 	}
-
 }
