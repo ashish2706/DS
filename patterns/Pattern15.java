@@ -1,15 +1,10 @@
 package patterns;
-
 import java.util.Scanner;
 
 public class Pattern15 {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner s = new Scanner(System.in);
-		
 		System.out.println("Enter the number of rows");
-		
 		int n = s.nextInt();
 		System.out.println();
 		
@@ -31,9 +26,6 @@ public class Pattern15 {
 				else
 					cval--;
 			}
-			for(int j =1;j<=outerspaces;j++)
-				System.out.print("\t");
-			
 			if(i<=n/2) {
 				outerspaces -=1;
 				stars +=2;
@@ -46,9 +38,5 @@ public class Pattern15 {
 		}
 				System.out.println();
 		}
-		
-		
-
 	}
-
 }
