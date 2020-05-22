@@ -11,11 +11,9 @@ public class digitofnumber {
 		
 		int n1 = n,count=0;
 		while(n1>=1) {
-			
 			count++;
 			n1 = n1/10;
 		}
-		
 		while(count>=1) {
 			
 			int power = (int)Math.pow(10,count-1);
