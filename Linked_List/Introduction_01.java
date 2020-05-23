@@ -3,11 +3,6 @@ package myjavaproject;
 import java.util.*;
 import java.io.*;
 
-//class Node { // either way we can define the class node, outside the class introduction_01 or inside it
-//	int data;
-//	Node next;
-//}
-
 public class Introduction_01 {
 
 // Node class:- for making a node having two property, data to store value of the node and next to store the reference to next node..
