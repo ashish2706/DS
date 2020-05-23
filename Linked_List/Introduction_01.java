@@ -1,28 +1,28 @@
 package myjavaproject;
+
 import java.util.*;
 import java.io.*;
 
-//class Node {
+//class Node { // either way we can define the class node, outside the class introduction_01 or inside it
 //	int data;
 //	Node next;
 //}
 
 public class Introduction_01 {
 
-// Node class:- for making a node having two property, data and next to store
-// address
+// Node class:- for making a node having two property, data to store value of the node and next to store the reference to next node..
 	public static class Node {
 		int data;
 		Node next;
 	}
 
-// we will make a class LinkList, it will contain all the data members and
-// functions of LinkList	
+// we will make a class LinkList, it will contain all the data members and the function which linked list perform
+	
 	public static class LinkList {
 
-		Node head;
-		Node tail;
-		int size;
+		Node head;  // head keeps track of the very first node of list
+		Node tail;  // tail keeps track of the last node of list
+		int size;   // size is for the length of list
 
 // to add at first position..............................................................
 // working in a constant time ..........................................................
@@ -46,8 +46,7 @@ public class Introduction_01 {
 		}
 
 // to add at last position......................................................
-// if we do not use tail as a property in node, complexity of this function would have 
-// been order of order of (N), where N be the size of list	
+// if we do not use tail as a property in node, complexity of this function would have been order of order of (N), where N be the size of list 	
 
 		void addLast(int val) {
 
@@ -318,8 +317,9 @@ public class Introduction_01 {
 			return ptr;
 		}
 
-// reverse list without touching the link between two nodes, i.e, revrse using data ...........................................
+// reverse list without touching the link between two nodes, i.e, reverse using data ...........................................
 // like we reverse the array, same we do here, using getNodeAt(idx) function...
+		
 		void reverseData() {
 
 			int left = 0;
@@ -345,8 +345,8 @@ public class Introduction_01 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner s = new Scanner(System.in);
-// we make an object of LinkList class, which will have all the data members of LinkList class and..... 
-// and all its functions..........................................................................		
+		
+// we make an object of LinkList class, which will have all the data members of LinkList class and all its functions
 		LinkList temp = new LinkList();
 
 		System.out.println("Enter your choice");
@@ -371,6 +371,7 @@ public class Introduction_01 {
 				int val2 = s.nextInt();
 				temp.addLast(val2);
 				break;
+					
 			case 3:
 				System.out.println("Enter the value");
 				int val3 = s.nextInt();
@@ -386,6 +387,7 @@ public class Introduction_01 {
 			case 5:
 				temp.deleteLast();
 				break;
+					
 			case 6:
 				System.out.println("Enter the index from where to delete");
 				int idx1 = s.nextInt();
@@ -395,6 +397,7 @@ public class Introduction_01 {
 			case 7:
 				temp.traverse();
 				break;
+					
 			case 8:
 				System.out.println(temp.getsize());
 				break;
@@ -415,7 +418,6 @@ public class Introduction_01 {
 				int mid = temp.middle();
 				if (mid != -1)
 					System.out.println("Middle is == " + mid);
-
 				else
 					System.out.println("List is Empty");
 				break;
